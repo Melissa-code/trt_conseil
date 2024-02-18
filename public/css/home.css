@@ -1,0 +1,84 @@
+/* Banner company section */
+.company-img {
+    background-image: url("../images/img-home.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    padding-top: 250px;
+    padding-bottom: 200px;
+    text-align: center;
+    display: block;
+    color: #000000;
+}
+
+.company-slogan {
+    background-color: #73683B;
+    opacity: 0.8;
+    border: 1px solid #FFFFFF;
+    margin-top: 20vh;
+}
+
+.company-title {
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 1.5rem;
+}
+
+/* Presentation section */
+.img-presentation {
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    height: 100%;
+}
+
+.img-container {
+    position: relative;
+    height: 100%;
+}
+
+.img-presentation-1 {
+    position: relative;
+    height: 80%;
+    margin-top: 5%;
+    margin-left: 30%;
+    z-index: 2;
+}
+
+.img-presentation-2 {
+    position: absolute;
+    height: 50%;
+    top: 0;
+    left: 20px;
+    z-index: 1;
+}
+
+/* Expertise banner section */
+.expertise-img {
+    background-image: url("../images/banner-expertise.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+}
+
+/* About us section */
+.aboutUs-img {
+    border: 1px solid #FFFFFF;
+}
+
+/* ********************************************************************
+                    Media queries
+********************************************************************* */
+
+/* Mobile phones */
+
+@media screen and (min-device-width: 280px) and (max-device-width: 767px) {
+
+    .company-img {
+        height: 45vh;
+    }
+
+    .expertise-img {
+        height: 10vh;
+    }
+}

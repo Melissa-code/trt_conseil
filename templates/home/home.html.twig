@@ -1,0 +1,119 @@
+{% extends 'base.html.twig' %}
+
+{% block css %} <link rel="stylesheet" href="{{ asset('css/home.css') }}" {% endblock css %}
+
+{% block title %} Accueil {% endblock %}
+
+{% block main %}
+
+    {# Company banner (image) #}
+    <section class="container-fluid" id="company-banner">
+        <div class="row">
+            {# image of the company (company-img) #}
+            <article class="col-12 company-img">
+                {# Slogan (company-slogan) #}
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6 rounded company-slogan">
+                        <h1 class="company-title p-3 text-dark fw-bold border-light">
+                            TRT Conseil <br>
+                            Recrutement pour l'hôtellerie et la restauration
+                        </h1>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    {# Presentation #}
+    <section class="container mb-4" id="presentation">
+        <div class="my-4">
+            <h2>Présentation</h2>
+        </div>
+        <div class="row d-flex justify-content-center">
+        {# Presentation text #}
+            <article class="col-12 col-lg-5 card rounded-0 my-4 mx-2 card-bg p-4" id="presentation-text">
+                <div class="card-body">
+                    <h3 class="card-title">Agence de recrutement</h3>
+                    <p class="card-text text-justify">
+                        TRT Conseil est une agence de recrutement spécialisée dans l'hôtellerie et la restauration
+                        haut de gamme.
+                    </p>
+                    <p class="card-text text-justify">
+                        Du chef étoilé au maître d’hôtel, nous trouvons les profils dont vous avez besoin au quotidien.
+                    </p>
+                    <p class="card-text text-justify">
+                         Que vous soyez en début de carrière ou à la recherche d’un challenge de très haut niveau,
+                         nous mettons à votre disposition notre réseau et notre expertise du recrutement.
+                    </p>
+                </div>
+            </article>
+            {# Presentation images #}
+            <article class="col-12 col-lg-5 my-4 mx-2 img-presentation card rounded-0">
+                <div class="img-container">
+                    <img src="{{ asset('images/presentation-img2.svg') }}"
+                        class="img-presentation-2"
+                        alt="Photo de couverts">
+                    <img src="{{ asset('images/presentation-img1.svg') }}"
+                       class="img-presentation-1"
+                       alt="Photo d'un serveur apportant un plat">
+               </div>
+            </article>
+        </div>
+    </section>
+
+    {# Expertise banner (image) #}
+    <section class="container-fluid" id="expertise-banner">
+        <div class="row">
+            {# image (expertise-img) #}
+            <article class="col-12 expertise-img">
+                {# Text (expertise-text) #}
+                <div class="row d-flex justify-content-center h-100">
+                    <div class="col-8 rounded expertise-text d-flex justify-content-center align-items-center">
+                        <h2 class="p-3 text-light fw-bold expertise-title">
+                            Expertise RH spécialisée en hôtellerie restauration
+                        </h2>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    {# About us #}
+    <section class="container mb-4" id="about-us">
+        <div class="my-4">
+            <h2>A Propos</h2>
+        </div>
+        <div class="row d-flex justify-content-center">
+            {# About us image #}
+            <article class="col-12 col-lg-5 card rounded-0 my-4 mx-2 aboutUs-img p-4">
+
+                <img class="img-fluid img-about" src="{{ asset('images/aboutUs-img.svg') }}" alt="Photo d'une serveuse">
+
+            </article>
+            {# About us text #}
+             <article class="col-12 col-lg-5 card card-bg rounded-0 my-4 mx-2 p-4">
+                <div class="card-body">
+                    <h3 class="card-title">Acteur majeur du recrutement</h3>
+                    <p class="card-text">
+                        Fondée en 2014, la société s'est agrandie au fil des ans et possède dorénavant
+                        plus de 12 centres dispersés aux quatre coins de la France.
+                    </p>
+                    <p class="card-text">
+                        Recrutement pour hôtel et restaurant : analyse des besoins et des postes à pourvoir,
+                        présélection de profils et sécurisation des embauches.
+                    </p>
+                    <p class="card-text">
+                        Accompagnement des candidats : étude des CV, mise en relation avec les établissements
+                        recruteurs, conseil en gestion de carrière.
+                    </p>
+                </div>
+            </article>
+
+            {# Button  #}
+            <div class="col-12 d-flex justify-content-center mt-3 ">
+                <button class="btn btn-custom rounded px-3" type="button">Voir nos annonces</button>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

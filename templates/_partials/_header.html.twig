@@ -1,0 +1,31 @@
+{# Header - navigation #}
+<div class="container">
+    <nav class="py-3 navbar-custom d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3  border-bottom">
+        {# Logo #}
+        <div class="col-md-3 mb-md-0 mx-5">
+            <a href="" class="d-inline-flex link-body-emphasis text-decoration-none text-light">
+                <img src="{{ asset('icons/logo.svg') }}" alt="logo" style="width: 5rem">
+            </a>
+        </div>
+        {# Menu #}
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 mx-5">
+            <li><a href="#" class="nav-link px-2">Accueil</a></li>
+            <li><a href="{{ path('app_home') }}#about-us" class="nav-link px-2">A propos</a></li>
+            <li><a href="#" class="nav-link px-2">Nos annonces</a></li>
+        </ul>
+        {# Login/Logout link #}
+        <div class="col-md-3 text-end mx-5 ">
+            <a class="" href="#">
+                <img src="{{ asset('icons/login.svg') }}" alt="connexion" style="width: 2rem" title="Connexion">
+            </a>
+            <a class="" href="#">
+                <img src="{{ asset('icons/logout.svg') }}" alt="déconnexion" style="width: 2rem" title="Déconnexion">
+            </a>
+        </div>
+    </nav>
+</div>
+
+
+
+
+

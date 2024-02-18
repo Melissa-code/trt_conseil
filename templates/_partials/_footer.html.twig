@@ -1,0 +1,85 @@
+{# Footer top #}
+<div class="container mt-3 footer-top">
+    <div class="row pt-4 mx-md-5">
+        {# Logo #}
+        <div class="col-md-3 mb-3 d-flex justify-content-center">
+            <a href="" class="d-inline-flex link-body-emphasis text-decoration-none text-light">
+                <img src="{{ asset('icons/logo.svg') }}" alt="logo" style="width: 5rem">
+            </a>
+        </div>
+        {# Navigation footer #}
+        <div class="col-md-3 mb-3">
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2 "><a href="#" class="nav-link p-0 ">Accueil</a></li>
+                <li class="nav-item mb-2 "><a href="{{ path('app_home') }}#about-us" class="nav-link p-0 ">A Propos</a></li>
+                <li class="nav-item mb-2 "><a href="#" class="nav-link p-0 ">Nos annonces</a></li>
+            </ul>
+        </div>
+        {# Contact info #}
+        <div class="col-md-3 mb-3">
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                    <h3 class="p-0">Nous contacter</h3>
+                </li>
+                <li class="nav-item mb-2">
+                    <i class="fa-solid fa-at me-2"></i>
+                    <a href="mailto:info@trtconseil.com" class="text-light text-decoration-none">
+                        info@trtconseil.com
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="tel:0643564566" class="text-light text-decoration-none">
+                        <i class="fa-solid fa-mobile-screen-button me-2"></i>
+                        06.43.56.45.66
+                    </a>
+                </li>
+            </ul>
+        </div>
+        {# Opening hours #}
+        <div class="col mb-3">
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                    <h3 class="p-0">
+                        Horaires
+                    </h3>
+                </li>
+                <li class="nav-item mb-2">
+                    <span class=" p-0 ">
+                        <i class="fa-solid fa-calendar-days me-2"></i>
+                        Du lundi au vendredi
+                    </span>
+                </li>
+                <li class="nav-item mb-2">
+                    <span class="p-0 ">
+                        <i class="fa-solid fa-clock me-2"></i>
+                        De 9:00 à 19:00
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+{# Footer bottom #}
+<div class="container footer-bottom">
+    <div class="row pt-4">
+        {# Copyright  #}
+        <div class="col-12 mb-3 d-flex justify-content-center py-2">
+            <p class="text-body-light">
+                Tous droits réservés © {{ "now"|date("Y") }} TRT Conseil by Melissa-code |
+                <a href="#" target="_blank" class="text-dark text-decoration-none footer-bottom-info">Mentions légales |</a>
+                <a href="#" target="_blank" class="text-dark text-decoration-none footer-bottom-info me-3 ">CGU</a>
+                {# Social networks #}
+                <a href="https://www.linkedin.com" target="_blank" class="text-dark text-decoration-none">
+                    <i class="fa-brands fa-linkedin fa-xl"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" class="text-dark text-decoration-none">
+                    <i class="fa-brands fa-square-facebook fa-xl"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="text-dark text-decoration-none">
+                    <i class="fa-brands fa-square-twitter fa-xl"></i>
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
