@@ -1,0 +1,83 @@
+{% extends 'base.html.twig' %}
+
+{% block css %} <link rel="stylesheet" href="{{ asset('css/register.css') }}" {% endblock css %}
+
+{% block title %} Inscription {% endblock %}
+
+{% block main %}
+
+    {# Title Register #}
+    <section class="container-fluid my-4">
+        <h1>Inscription</h1>
+    </section>
+
+    {# Register form #}
+    <section class="container">
+        <div class="row d-flex justify-content-center">
+            <form class="col-11 col-md-10 form-bg py-5 my-2" action="" method="POST">
+                <div class="row d-flex justify-content-center">
+                    {# candidate/boss role #}
+                    <article class="col-12 col-md-4 ">
+                        <div class="mt-5 mb-4 img-role">
+                            <img src="{{ asset('images/photo-register.svg') }}" alt="photo candidat ou recruteur" width="200vh;">
+                        </div>
+                        {# Choose role #}
+                        <div class="mb-2 roleUser">
+                            <label>Cochez votre statut :</label>
+                        </div>
+                        <div class="form-check roleUser">
+                            <input class="form-check-input me-2" type="radio" name="roleUser" id="candidate" >
+                            <label class="form-check-label" for="candidate">Candidat</label>
+                        </div>
+                        <div class="form-check roleUser">
+                            <input class="form-check-input me-2" type="radio" name="roleUser" id="boss">
+                            <label class="form-check-label" for="boss">Recruteur</label>
+                        </div>
+                    </article>
+
+                    {# Inputs #}
+                    <article class="col-12 col-md-6">
+                        <div class="row">
+                            {# Lastname #}
+                            <div class="col-12 col-md-6 mb-3">
+                                <label for="lastname" class="form-label">Nom</label>
+                                <input type="text" class="form-control" id="lastname" name="lastname" aria-describedby="emailHelp">
+                            </div>
+                            {# Firstname #}
+                            <div class="col-12 col-md-6 mb-3">
+                                <label for="firstname" class="form-label">Prénom</label>
+                                <input type="text" class="form-control" id="firstname" name="firstname" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        {# Email #}
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                        {# Password #}
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Mot de passe</label>
+                            <input type="password" class="form-control" id="password" name="password" aria-describedby="emailHelp">
+                        </div>
+                        {# Confirm password #}
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Confirmer mot de passe</label>
+                            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
+                        </div>
+                        <div class="mb-2">
+                            <small class="mb-2">
+                                <i class="fa-solid fa-circle-info me-2"></i>
+                                En créant ce compte, vous acceptez les conditions.</small>
+                        </div>
+                        {# Submit btn #}
+                        <div class="">
+                            <button type="submit" class="btn btn-custom w-100">S'inscrire</button>
+                        </div>
+                    </article>
+
+                </div>
+            </form>
+        </div>
+    </section>
+
+{% endblock main%}

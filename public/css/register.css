@@ -1,0 +1,22 @@
+.form-bg {
+    background-color: #13262F;
+    color: #FFFFFF;
+}
+
+
+/* ********************************************************************
+                    Media queries
+********************************************************************* */
+
+/* Mobile phones */
+
+@media screen and (min-device-width: 280px) and (max-device-width: 767px) {
+
+    .img-role {
+        text-align: center;
+    }
+    .roleUser {
+        display: flex;
+        justify-content: center;
+    }
+}
